@@ -1,0 +1,77 @@
+/* Navbar link hover effect */
+.navbar-link {
+  color: white; /* Default text color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.navbar-link:hover {
+  color: #852b45; /* Hover color (change to any color you prefer) */
+  cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+.navbar-link.active {
+  color: #000000; /* Active link color */
+}
+.featured-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .featured-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .featured-card:hover .popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .featured-card img {
+    transition: opacity 0.3s ease;
+  }
+  
+  .featured-card:hover img {
+    opacity: 0.6;
+  }
+  
+  .popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.183);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    color: white;
+    text-align: center;
+  }
+  
+  .popup-content {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.619);
+    border-radius: 10px;
+  }
+  
+  .popup button {
+    margin-top: 10px;
+    background-color: #2b7c85;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup button:hover {
+    background-color: #26a69a;
+  }
+  
